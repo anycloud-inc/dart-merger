@@ -1,14 +1,14 @@
 import glob = require("glob");
 import fs = require("fs");
 
-module.exports = () => {
-  const [, , firstArg] = process.argv;
+interface Options {
+  packageName: string;
+  src: string;
+  out: string;
+}
 
-  const packageName = "example";
-  const lib = process.cwd() + "/example/lib";
-  const out = process.cwd() + "/example/out/out.dart";
-
-  const files = glob.sync(lib + "/**/*.dart");
+const merge = ({ packageName, src, out }: Options) => {
+  const files = glob.sync(src + "/**/*.dart");
   console.log(files);
 
   let imports: string[] = [];
@@ -36,3 +36,6 @@ module.exports = () => {
 
   console.log("successfully merged 🎉");
 };
+
+// module.exports = merge;
+export default merge;

@@ -11,6 +11,7 @@
     "prepare": "tsc -p ."
   },
   "dependencies": {
+    "cac": "^6.7.12",
     "glob": "^7.2.0"
   },
   "devDependencies": {
