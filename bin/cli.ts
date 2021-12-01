@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-require("ts-node").register();
 import cac from "cac";
 import merge from "../src/merge";
 

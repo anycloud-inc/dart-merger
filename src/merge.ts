@@ -37,5 +37,4 @@ const merge = ({ packageName, src, out }: Options) => {
   console.log("successfully merged 🎉");
 };
 
-// module.exports = merge;
 export default merge;
