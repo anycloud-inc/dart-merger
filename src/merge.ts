@@ -9,6 +9,7 @@ interface Options {
 
 const merge = ({ packageName, src, out }: Options) => {
   const files = glob.sync(src + "/**/*.dart");
+  console.log("merging files...");
   console.log(files);
 
   let imports: string[] = [];
@@ -30,9 +31,6 @@ const merge = ({ packageName, src, out }: Options) => {
   buffer = imports.join("\n") + "\n" + buffer;
 
   fs.writeFileSync(out, buffer);
-
-  console.log("imports");
-  console.log(imports);
 
   console.log("successfully merged 🎉");
 };

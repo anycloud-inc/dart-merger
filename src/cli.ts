@@ -16,10 +16,6 @@ cli.showHelpOnExit = true;
 
 const parsed = cli.parse();
 
-console.log("-------------");
-console.log(parsed);
-console.log("-------------");
-
 if (parsed.options.help) {
   process.exit(0);
 }
