@@ -1,6 +1,11 @@
 import 'dart:math';
 
-class Fuga {}
+
+class Fuga {
+  void run() {
+    print(sin(1));
+  }
+}
 
 
 class Hoge {
@@ -10,5 +15,10 @@ class Hoge {
 }
 
 
-class Piyo extends Hoge {}
+
+class Piyo extends Hoge {
+  Fuga generateFuga() {
+    return Fuga();
+  }
+}
 
