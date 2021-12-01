@@ -5,7 +5,7 @@
     "access": "public"
   },
   "bin": {
-    "dart-merger": "bin/cli.js"
+    "dart-merger": "dist/cli.js"
   },
   "scripts": {
     "prepare": "tsc -p ."
