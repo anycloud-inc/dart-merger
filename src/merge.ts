@@ -17,9 +17,14 @@ const merge = ({ packageName, src, out }: Options) => {
 
   for (const file of files) {
     let text = fs.readFileSync(file, "utf-8");
-    text = text.replace(/^part .*\n$/m, "");
-    text = text.replace(/^import .*\n$/m, (str) => {
-      if (str.match(new RegExp(`package:${packageName}`)) == null) {
+    text = text.replace(/^part .*\n/gm, "");
+    text = text.replace(/^export .*\n/gm, "");
+    text = text.replace(/^import .*\n/gm, (str) => {
+      if (
+        str.match(/:/) != null && // import 'hoge.dart' のような内部importを除外
+        str.match(new RegExp(`package:${packageName}`)) == null &&
+        !imports.includes(str)
+      ) {
         // 外部packageであれば追加
         imports.push(str);
       }
