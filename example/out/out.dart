@@ -26,6 +26,18 @@ void _hoge_$valueOf(String name) {
 
 
 
+class Moti {
+  void run() {
+    print(sin(1));
+    _moti_$valueOf("moti");
+  }
+}
+
+void _moti_$valueOf(String name) {
+  print(name);
+}
+
+
 class Piyo extends Hoge {
   Fuga generateFuga() {
     return Fuga();
