@@ -32,7 +32,7 @@ const merge = ({ packageName, src, out }: Options) => {
     })
     text = text.replace(/\b[_].+?\b/gm, str => {
       // _で始まるprivateな要素に接頭語をつける
-      const fileName = path.basename(file, '.dart')
+      const fileName = path.basename(file).split('.')[0]
       return '_' + fileName + str
     })
     buffer += text + '\n'
