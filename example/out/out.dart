@@ -4,6 +4,11 @@ import 'dart:math';
 class Fuga {
   void run() {
     print(sin(1));
+    this._fuga_$valueOf("hoge");
+  }
+
+  void _fuga_$valueOf(String name) {
+    print(name);
   }
 }
 
