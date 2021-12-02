@@ -1,6 +1,10 @@
 import 'dart:math';
 
-class Moti {
+class _$Moti {
+  _$Moti._() {
+    print("private constructor");
+  }
+
   void run() {
     print(sin(1));
     _$valueOf("moti");

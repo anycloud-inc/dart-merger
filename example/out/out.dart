@@ -26,7 +26,11 @@ void _hoge_$valueOf(String name) {
 
 
 
-class Moti {
+class _moti_$Moti {
+  _moti_$Moti._() {
+    print("private constructor");
+  }
+
   void run() {
     print(sin(1));
     _moti_$valueOf("moti");
