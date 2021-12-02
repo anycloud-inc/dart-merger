@@ -1,6 +1,10 @@
 import 'dart:math';
 
-class Moti {
+class _$EntityFreetimeViewable {
+  _$EntityFreetimeViewable._() {
+    print("private constructor");
+  }
+
   void run() {
     print(sin(1));
     _$valueOf("moti");
