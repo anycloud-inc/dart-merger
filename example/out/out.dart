@@ -26,8 +26,8 @@ void _hoge_$valueOf(String name) {
 
 
 
-class _moti_$EntityFreetimeViewable {
-  _moti_$EntityFreetimeViewable._() {
+class _moti_$Moti {
+  _moti_$Moti._() {
     print("private constructor");
   }
 

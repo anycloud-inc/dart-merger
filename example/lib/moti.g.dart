@@ -1,7 +1,7 @@
 import 'dart:math';
 
-class _$EntityFreetimeViewable {
-  _$EntityFreetimeViewable._() {
+class _$Moti {
+  _$Moti._() {
     print("private constructor");
   }
 
