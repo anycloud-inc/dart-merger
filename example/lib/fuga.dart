@@ -3,10 +3,10 @@ import 'dart:math';
 class Fuga {
   void run() {
     print(sin(1));
-    this._$valueOf("hoge");
+    _$valueOf("fuga");
   }
+}
 
-  void _$valueOf(String name) {
-    print(name);
-  }
+void _$valueOf(String name) {
+  print(name);
 }
