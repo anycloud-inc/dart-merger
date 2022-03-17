@@ -1,15 +1,15 @@
 {
-  "name": "@muraikenta/dart-merger",
-  "version": "0.0.8",
+  "name": "@anycloud/dart-merger",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/muraikenta/dart-merger"
+    "url": "https://github.com/anycloud-inc/dart-merger"
   },
-  "homepage": "https://github.com/muraikenta/dart-merger#readme",
+  "homepage": "https://github.com/anycloud-inc/dart-merger#readme",
   "bin": {
     "dart-merger": "dist/cli.js"
   },
